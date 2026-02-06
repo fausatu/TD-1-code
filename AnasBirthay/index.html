@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+            background-color: rgb(218, 216, 216);
+            color: rgb(169, 162, 162);
+        }
+        #container{
+            margin-top: 100px;
+        }
+        #words{
+            font-size: 80px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+         #name{
+            font-size: 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+         
+            #dancebtn{
+                margin-top: 50px;
+                padding: 10px;
+                font-size: 20px;
+                background-color: rgb(42, 46, 70);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                 animation: bounce 1s infinite;
+            }
+
+            @keyframes bounce { 
+                0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 
+                40% { transform: translateY(-20px); } 
+                60% { transform: translateY(-10px); }
+             }
+            
+            .vid{
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+    </style>
+</head>
+<body>
+       <div class="container">
+         <h1 id="words">عيد ميلاد سعيد</h1>
+         <h3 id="name">Anas</h3>
+
+       </div>
+       <div class="vid">
+            <video src="videoplayback.mp4" style="display: none;" id="vid"></video>
+       </div>
+       <button id="dancebtn">Wanna dance ? Click me </button>
+
+     <script src="birthday.js"></script>  
+</body>
+</html>
