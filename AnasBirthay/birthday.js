@@ -35,7 +35,7 @@ dancebtn.addEventListener("click", function () {
         vid.currentTime = 30;
         vid.play();
         vid.addEventListener("timeupdate", function () {
-                if (vid.currentTime >= 70) {
+                if (vid.currentTime >= 80) {
                     vid.pause();
         }
 
